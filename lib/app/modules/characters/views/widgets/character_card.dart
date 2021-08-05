@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/app/viewmodels/character_view_model.dart';
+import 'package:learning_flutter/app/modules/characters/viewmodels/character_view_model.dart';
 
 class CharacterCard extends StatelessWidget {
   final CharacterViewModel characterInfo;
@@ -20,7 +20,7 @@ class CharacterCard extends StatelessWidget {
             fit: BoxFit.fitWidth,
           ),
           Expanded(
-            child:  Padding(
+            child: Padding(
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,

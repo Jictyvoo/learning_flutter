@@ -1,5 +1,6 @@
-import 'package:learning_flutter/app/viewmodels/character_view_model.dart';
-import 'package:learning_flutter/app/views/characters_list/characters_repository.dart';
+import 'package:learning_flutter/app/modules/characters/viewmodels/character_view_model.dart';
+
+import 'characters_repository.dart';
 
 class FetchCharactersController {
   final CharactersRepository _repository = const CharactersRepository();

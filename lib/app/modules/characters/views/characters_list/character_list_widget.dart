@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/app/viewmodels/character_view_model.dart';
-import 'package:learning_flutter/app/views/characters_list/fetch_controller.dart';
-import 'package:learning_flutter/app/views/widgets/character_card.dart';
+import 'package:learning_flutter/app/modules/characters/viewmodels/character_view_model.dart';
+import 'package:learning_flutter/app/modules/characters/views/widgets/character_card.dart';
+
+import 'fetch_controller.dart';
 
 class CharacterListWidget extends StatelessWidget {
   final FetchCharactersController _controller =

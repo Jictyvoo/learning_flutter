@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:learning_flutter/app/models/characters_list_model.dart';
+import 'package:learning_flutter/app/modules/characters/models/characters_list_model.dart';
 
 const CHARACTERS_ADDRESS = 'https://rickandmortyapi.com/api/character/?page=1';
 
