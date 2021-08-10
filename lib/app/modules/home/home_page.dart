@@ -35,6 +35,19 @@ class HomePage extends StatelessWidget {
                 child: Text('Ir para formulários'),
               ),
             ),
+            SizedBox(height: 12),
+            SizedBox(
+              width: buttonWidth,
+              child: ElevatedButton(
+                onPressed: () async {
+                  await Modular.to.pushNamed(
+                    '/scroll-bottom',
+                    arguments: 'Olha os Ricks',
+                  );
+                },
+                child: Text('Vejamos o scroll'),
+              ),
+            ),
           ],
         ),
       ),
@@ -42,7 +55,7 @@ class HomePage extends StatelessWidget {
         currentIndex: 2,
         items: [
           for (var index = 0; index < 3; index++)
-            BottomNavigationBarItem(icon: Icon(Icons.http),label: '$index'),
+            BottomNavigationBarItem(icon: Icon(Icons.http), label: '$index'),
         ],
       ),
     );

@@ -10,6 +10,7 @@ class CredentialsDatasourceHttp implements CredentialsDatasourceInterface {
     final response = await http.post(
       Uri.parse('http://10.0.2.2:8000/'),
       body: jsonEncode(requestBody),
+      headers: {'Content-Type': 'application/json'},
     );
     return response.statusCode != 200 ? 'Status Code is not 200' : '';
   }
