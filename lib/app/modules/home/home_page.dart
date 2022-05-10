@@ -48,6 +48,18 @@ class HomePage extends StatelessWidget {
                 child: Text('Vejamos o scroll'),
               ),
             ),
+            SizedBox(height: 12),
+            SizedBox(
+              width: buttonWidth,
+              child: ElevatedButton(
+                onPressed: () async {
+                  await Modular.to.pushNamed(
+                    '/stackoverflow',
+                  );
+                },
+                child: Text('Stackoverflow questions test'),
+              ),
+            ),
           ],
         ),
       ),

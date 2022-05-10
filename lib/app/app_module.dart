@@ -1,9 +1,10 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:learning_flutter/app/modules/home/home_page.dart';
-import 'package:learning_flutter/app/modules/home/scroll_with_button_on_bottom.dart';
-import 'package:learning_flutter/app/modules/update/update_module.dart';
 
 import 'modules/characters/views/characters_list_page.dart';
+import 'modules/home/home_page.dart';
+import 'modules/home/scroll_with_button_on_bottom.dart';
+import 'modules/stackoverflow/stackoverflow_module.dart';
+import 'modules/update/update_module.dart';
 
 class AppModule extends Module {
   @override
@@ -21,5 +22,6 @@ class AppModule extends Module {
       child: (_, args) => ScrollWithButtonOnBottom(),
     ),
     ModuleRoute('/update', module: UpdateModule()),
+    ModuleRoute('/stackoverflow', module: StackoverflowModule()),
   ];
 }
